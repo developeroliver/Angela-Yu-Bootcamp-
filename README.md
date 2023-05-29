@@ -12,3 +12,5 @@
 ## Dicee
 https://github.com/developeroliver/Angela-Yu-Bootcamp-/assets/92441827/c7f76356-f23e-4a96-8662-824371086545
 
+## Magic 8 Ball
+https://github.com/developeroliver/Angela-Yu-Bootcamp-/assets/92441827/3658bd83-a8d1-42fa-888e-643f3d6d012e
