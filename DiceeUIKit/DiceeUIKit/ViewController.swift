@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
     
@@ -31,6 +32,14 @@ class ViewController: UIViewController {
         imageView.image         = #imageLiteral(resourceName: "DiceOne")
         imageView.contentMode   = .scaleAspectFit
         
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            imageView.widthAnchor.constraint(equalToConstant: 130),
+            imageView.heightAnchor.constraint(equalToConstant: 130),
+        ])
+        
         return imageView
     }()
     
@@ -38,6 +47,13 @@ class ViewController: UIViewController {
         let imageView           = UIImageView()
         imageView.image         = #imageLiteral(resourceName: "DiceTwo")
         imageView.contentMode   = .scaleAspectFit
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            imageView.widthAnchor.constraint(equalToConstant: 130),
+            imageView.heightAnchor.constraint(equalToConstant: 130),
+        ])
         
         return imageView
     }()
@@ -86,6 +102,14 @@ class ViewController: UIViewController {
         view.addSubview(backgroundImageView)
         view.sendSubviewToBack(backgroundImageView)
         backgroundImageView.frame = view.bounds
+        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor),
+            backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
     }
     
     
@@ -94,10 +118,10 @@ class ViewController: UIViewController {
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
+            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            logoImageView.widthAnchor.constraint(equalToConstant: 150),
-            logoImageView.heightAnchor.constraint(equalToConstant: 150),
+            logoImageView.widthAnchor.constraint(equalToConstant: 200),
+            logoImageView.heightAnchor.constraint(equalToConstant: 200),
         ])
     }
     
@@ -113,9 +137,8 @@ class ViewController: UIViewController {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 150),
-            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        ])
+            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),        ])
     }
     
     
@@ -124,11 +147,10 @@ class ViewController: UIViewController {
         rollButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            rollButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -100),
+            rollButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
             rollButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             rollButton.widthAnchor.constraint(equalToConstant: 200),
             rollButton.heightAnchor.constraint(equalToConstant: 50),
         ])
     }
 }
-
