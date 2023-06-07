@@ -14,3 +14,10 @@ https://github.com/developeroliver/Angela-Yu-Bootcamp-/assets/92441827/c7f76356-
 
 ## Magic 8 Ball
 https://github.com/developeroliver/Angela-Yu-Bootcamp-/assets/92441827/3658bd83-a8d1-42fa-888e-643f3d6d012e
+
+## BMI Calculator
+https://github.com/developeroliver/Angela-Yu-Bootcamp-/assets/92441827/cd8beb2c-0fc5-46cc-8d9c-1b483ed418c4
+
+## Tipsy
+https://github.com/developeroliver/Angela-Yu-Bootcamp-/assets/92441827/43b43ae4-4b73-4338-ba86-20d9ac80cf41
+
